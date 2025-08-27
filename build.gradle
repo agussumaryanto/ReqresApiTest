@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+    id 'io.qameta.allure' version '2.12.0'  // Add Allure plugin
+}
+
+group = 'org.agussumaryanto'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // get the dependencies from https://mvnrepository.com/
+
+    testImplementation("org.testng:testng:7.11.0") // Framework testing
+
+    implementation("commons-codec:commons-codec:1.19.0") // RestAssured codec
+
+    testImplementation("io.rest-assured:rest-assured:5.5.6") // RestAssured for API testing
+
+    testImplementation("org.json:json:20250517") // JSON
+
+    implementation("com.fasterxml.jackson.core:jackson-core:2.19.2") // JSON validator - core
+
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.19.2") // JSON validator - databind
+
+    testImplementation("io.rest-assured:json-schema-validator:5.5.6") // JSON validator
+
+    testImplementation("org.hamcrest:hamcrest:3.0") // For assertions
+
+    implementation("io.qameta.allure:allure-testng:2.29.1") // Allure TestNG for test report
+
+    implementation("org.slf4j:slf4j-api:2.0.17") // Add a logger backend to your testRuntimeOnly
+
+    implementation("ch.qos.logback:logback-classic:1.5.18") // Add a logger backend to your testRuntimeOnly
+
+}
+
+test {
+    useTestNG()
+    testLogging.showStandardStreams = true
+}
