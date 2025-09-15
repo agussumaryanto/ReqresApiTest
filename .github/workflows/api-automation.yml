@@ -41,8 +41,8 @@ jobs:
         uses: actions/upload-artifact@v4.6.2
         if: always()
         with:
-          name: Cucumber Report
-          path: reports
+          name: Reqres API Report Test
+          path: build/reports/
       
       # Deploy to Github Pages
       - name: Deploy report to Github Pages
