@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class apiauto.ReqresApiTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class apiauto.ReqresApiTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/apiauto.html">apiauto</a> &gt; ReqresApiTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">4.154s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testCreateUserMissingFields</td>
+<td class="success">2.632s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCreateUserSuccess</td>
+<td class="success">0.275s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteNonExistingUser</td>
+<td class="success">0.367s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetSpecificUserSuccess</td>
+<td class="success">0.375s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetUserNotFound</td>
+<td class="success">0.392s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetUserSuccess</td>
+<td class="success">0.113s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>HTTP/1.1 400 Bad Request
+Date: Tue, 16 Sep 2025 14:49:19 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 28
+Connection: keep-alive
+CF-RAY: 98012b79ae8067ee-SJC
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/&quot;1c-NmpazMScs9tOqR7eDEesn+pqC9Q&quot;
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 98
+Ratelimit-Reset: 60
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=A64wAAf5pV43TvdyRVr8Pex7K6nDLEVB4Z2gABz6VCw%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1758034159&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=A64wAAf5pV43TvdyRVr8Pex7K6nDLEVB4Z2gABz6VCw%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1758034159&quot;
+Vary: Origin
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: 0f342007-a5bb-3e5b-2359-13bf83b0c222
+X-Xss-Protection: 1; mode=block
+cf-cache-status: DYNAMIC
+Server: cloudflare
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=1782&amp;min_rtt=1761&amp;rtt_var=676&amp;sent=6&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=2817&amp;recv_bytes=875&amp;delivery_rate=1621805&amp;cwnd=251&amp;unsent_bytes=0&amp;cid=611e69df005eb496&amp;ts=381&amp;x=0&quot;
+
+{
+    &quot;error&quot;: &quot;Missing password&quot;
+}
+HTTP/1.1 201 Created
+Date: Tue, 16 Sep 2025 14:49:21 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 96
+Connection: keep-alive
+CF-RAY: 98012b815d2d169e-SJC
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/&quot;60-rEqo6/x4aOLsfHosA+8S5O1NZeE&quot;
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 96
+Ratelimit-Reset: 59
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=X815V66tEpUSr%2BCyh0ttpmFjofG2jZmm1SUemBGbpTc%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1758034160&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=X815V66tEpUSr%2BCyh0ttpmFjofG2jZmm1SUemBGbpTc%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1758034160&quot;
+Vary: Origin
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: 35af625a-6ce7-6ff5-175b-8495bc19ccc7
+X-Xss-Protection: 1; mode=block
+cf-cache-status: DYNAMIC
+Server: cloudflare
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=1812&amp;min_rtt=1740&amp;rtt_var=704&amp;sent=5&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=2816&amp;recv_bytes=900&amp;delivery_rate=1641379&amp;cwnd=251&amp;unsent_bytes=0&amp;cid=666a194c0ab28d68&amp;ts=195&amp;x=0&quot;
+
+{
+    &quot;name&quot;: &quot;Agus Sumaryanto&quot;,
+    &quot;job&quot;: &quot;QA Engineer&quot;,
+    &quot;id&quot;: &quot;423&quot;,
+    &quot;createdAt&quot;: &quot;2025-09-16T14:49:20.956Z&quot;
+}
+HTTP/1.1 204 No Content
+Date: Tue, 16 Sep 2025 14:49:21 GMT
+Connection: keep-alive
+CF-RAY: 98012b833c9f1574-SJC
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 94
+Ratelimit-Reset: 59
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=OJNVK5rfplaY5R%2FmtzxozyWYndf8W1kBVeLgibDfDHM%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1758034161&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=OJNVK5rfplaY5R%2FmtzxozyWYndf8W1kBVeLgibDfDHM%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1758034161&quot;
+Vary: Origin
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: 2d2a4a30-c781-1eb4-48cd-49fc8501ab54
+X-Xss-Protection: 1; mode=block
+cf-cache-status: DYNAMIC
+Server: cloudflare
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=1358&amp;min_rtt=1151&amp;rtt_var=579&amp;sent=5&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=2817&amp;recv_bytes=791&amp;delivery_rate=2481320&amp;cwnd=251&amp;unsent_bytes=0&amp;cid=46d844414ae55f0a&amp;ts=312&amp;x=0&quot;
+HTTP/1.1 200 OK
+Date: Tue, 16 Sep 2025 14:49:21 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+etag: W/&quot;156-G8PxZj/FnZQ+SpFBW92ACW7nB0E&quot;
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 92
+Ratelimit-Reset: 60
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=doVJG7Zc9mmOg9M07A4kxi7mRMQLp5HPe%2Fe4nHXMePA%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1758004558&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=doVJG7Zc9mmOg9M07A4kxi7mRMQLp5HPe%2Fe4nHXMePA%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1758004558&quot;
+Vary: Origin, Accept-Encoding
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: e83299f8-cc4b-0f2b-e1b0-2bdae431aa0a
+X-Xss-Protection: 1; mode=block
+Cache-Control: max-age=14400
+cf-cache-status: REVALIDATED
+Server: cloudflare
+CF-RAY: 98012b856b0c15f5-SJC
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=1308&amp;min_rtt=1251&amp;rtt_var=510&amp;sent=5&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=2816&amp;recv_bytes=785&amp;delivery_rate=2282973&amp;cwnd=251&amp;unsent_bytes=0&amp;cid=b8915da4264dc499&amp;ts=313&amp;x=0&quot;
+
+{
+    &quot;data&quot;: {
+        &quot;id&quot;: 5,
+        &quot;email&quot;: &quot;charles.morris@reqres.in&quot;,
+        &quot;first_name&quot;: &quot;Charles&quot;,
+        &quot;last_name&quot;: &quot;Morris&quot;,
+        &quot;avatar&quot;: &quot;https://reqres.in/img/faces/5-image.jpg&quot;
+    },
+    &quot;support&quot;: {
+        &quot;url&quot;: &quot;https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral&quot;,
+        &quot;text&quot;: &quot;Tired of writing endless social media content? Let Content Caddy generate it for you.&quot;
+    }
+}
+HTTP/1.1 404 Not Found
+Date: Tue, 16 Sep 2025 14:49:22 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+CF-RAY: 98012b87bb3ba63b-SJC
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 90
+Ratelimit-Reset: 58
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=T6RL4qNZ2HQBBQuGJGD%2BAdwZBR62AzkIiAxV1si7GPo%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1758034162&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=T6RL4qNZ2HQBBQuGJGD%2BAdwZBR62AzkIiAxV1si7GPo%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1758034162&quot;
+Vary: Origin, Accept-Encoding
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: 5a9266ac-3f1e-8b8c-6080-7de1fc4886ab
+X-Xss-Protection: 1; mode=block
+Cache-Control: max-age=14400
+cf-cache-status: MISS
+Server: cloudflare
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=1656&amp;min_rtt=1593&amp;rtt_var=643&amp;sent=5&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=2817&amp;recv_bytes=790&amp;delivery_rate=1792843&amp;cwnd=251&amp;unsent_bytes=0&amp;cid=f51fcec7cb55ba91&amp;ts=360&amp;x=0&quot;
+
+{
+    
+}
+HTTP/1.1 200 OK
+Date: Tue, 16 Sep 2025 14:49:22 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/&quot;440-ZjsmMKR8P3usr2uJZbOCGCxC3Uw&quot;
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 98
+Ratelimit-Reset: 60
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=nbTmLbha8EoyopOyuEFWLQSpq6b9MVMRBGc2fT768sE%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1758031465&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=nbTmLbha8EoyopOyuEFWLQSpq6b9MVMRBGc2fT768sE%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1758031465&quot;
+Vary: Origin, Accept-Encoding
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: cea6b071-b8c6-49ac-e491-2112e765d4c3
+X-Xss-Protection: 1; mode=block
+Age: 2697
+Cache-Control: max-age=14400
+cf-cache-status: HIT
+Server: cloudflare
+CF-RAY: 98012b8a4a18df9a-SJC
+server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=1252&amp;min_rtt=1226&amp;rtt_var=478&amp;sent=4&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=2817&amp;recv_bytes=790&amp;delivery_rate=2329526&amp;cwnd=251&amp;unsent_bytes=0&amp;cid=4b71f0213496cac5&amp;ts=42&amp;x=0&quot;
+
+{
+    &quot;page&quot;: 2,
+    &quot;per_page&quot;: 6,
+    &quot;total&quot;: 12,
+    &quot;total_pages&quot;: 2,
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 7,
+            &quot;email&quot;: &quot;michael.lawson@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Michael&quot;,
+            &quot;last_name&quot;: &quot;Lawson&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 8,
+            &quot;email&quot;: &quot;lindsay.ferguson@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Lindsay&quot;,
+            &quot;last_name&quot;: &quot;Ferguson&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/8-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 9,
+            &quot;email&quot;: &quot;tobias.funke@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Tobias&quot;,
+            &quot;last_name&quot;: &quot;Funke&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/9-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 10,
+            &quot;email&quot;: &quot;byron.fields@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Byron&quot;,
+            &quot;last_name&quot;: &quot;Fields&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/10-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 11,
+            &quot;email&quot;: &quot;george.edwards@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;George&quot;,
+            &quot;last_name&quot;: &quot;Edwards&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/11-image.jpg&quot;
+        },
+        {
+            &quot;id&quot;: 12,
+            &quot;email&quot;: &quot;rachel.howell@reqres.in&quot;,
+            &quot;first_name&quot;: &quot;Rachel&quot;,
+            &quot;last_name&quot;: &quot;Howell&quot;,
+            &quot;avatar&quot;: &quot;https://reqres.in/img/faces/12-image.jpg&quot;
+        }
+    ],
+    &quot;support&quot;: {
+        &quot;url&quot;: &quot;https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral&quot;,
+        &quot;text&quot;: &quot;Tired of writing endless social media content? Let Content Caddy generate it for you.&quot;
+    }
+}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.13</a> at Sep 16, 2025, 2:49:23 PM</p>
+</div>
+</div>
+</body>
+</html>
